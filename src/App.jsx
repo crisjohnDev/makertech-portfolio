@@ -124,6 +124,20 @@ const solutions = [
     image: "/images/attendance-system.png",
     features: ["Employee Attendance", "Time Records", "Payroll Management"],
   },
+  {
+    number: "04",
+    name: "PickleBook",
+    category: "Pickleball Court Reservation Management",
+    description:
+      "A pickleball court reservation management system designed to simplify court bookings, manage court availability, organize reservation schedules, and streamline facility operations through an intuitive management platform.",
+    image: "/images/picklebook.png",
+    features: [
+      "Court Reservation Management",
+      "Court Availability & Scheduling",
+      "Booking Management",
+      "Facility Operations",
+    ],
+  },
 ];
 
 const projects = [
@@ -1322,6 +1336,64 @@ export default function App() {
               </div>
             </div>
           </div>
+
+          {/* MISSION, VISION & GOALS - ADDED */}
+          <div className="mx-auto mt-20 max-w-7xl px-5 sm:px-8">
+            <div className="reveal mb-10 text-center">
+              <p className="mb-4 text-xs font-bold uppercase tracking-[0.3em] text-blue-400">
+                Our Direction
+              </p>
+              <h2 className="text-3xl font-black tracking-tight text-white sm:text-4xl">
+                Mission, Vision <span className="text-gradient">& Goals.</span>
+              </h2>
+              <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-slate-400">
+                The principles that guide how we create technology and serve
+                businesses, organizations, and communities.
+              </p>
+            </div>
+
+            <div className="grid gap-5 md:grid-cols-3">
+              <article className="reveal card-hover rounded-2xl border border-white/10 bg-[#0b1425] p-7">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-500/10 text-3xl text-blue-400">
+                  🎯
+                </div>
+                <h3 className="mt-6 text-xl font-black text-white">Our Mission</h3>
+                <p className="mt-4 text-sm leading-7 text-slate-400">
+                  To provide practical, innovative, and reliable technology
+                  solutions that simplify operations, improve productivity,
+                  and help solve real-world challenges through software,
+                  automation, electronics, and IT services.
+                </p>
+              </article>
+
+              <article className="reveal card-hover delay-100 rounded-2xl border border-white/10 bg-[#0b1425] p-7">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-500/10 text-3xl text-cyan-400">
+                  🔭
+                </div>
+                <h3 className="mt-6 text-xl font-black text-white">Our Vision</h3>
+                <p className="mt-4 text-sm leading-7 text-slate-400">
+                  To become a trusted technology solutions provider recognized
+                  for innovation, quality, and excellence, making useful and
+                  forward-thinking technology more accessible to businesses
+                  and organizations.
+                </p>
+              </article>
+
+              <article className="reveal card-hover delay-200 rounded-2xl border border-white/10 bg-[#0b1425] p-7">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-indigo-500/10 text-3xl text-indigo-400">
+                  🚀
+                </div>
+                <h3 className="mt-6 text-xl font-black text-white">Our Goals</h3>
+                <p className="mt-4 text-sm leading-7 text-slate-400">
+                  To develop dependable and user-friendly software, help
+                  businesses automate everyday processes, expand our
+                  electronics and IoT capabilities, and build lasting client
+                  relationships through quality service and continuous
+                  improvement.
+                </p>
+              </article>
+            </div>
+          </div>
         </section>
 
         {/* SERVICES */}
@@ -1404,7 +1476,7 @@ export default function App() {
               />
             </div>
 
-            <div className="grid gap-7 lg:grid-cols-3">
+            <div className="grid gap-7 md:grid-cols-2 xl:grid-cols-4">
               {solutions.map((solution, index) => (
                 <article
                   key={solution.number}
@@ -1774,6 +1846,7 @@ export default function App() {
                   <option value="SakayGo">SakayGo</option>
                   <option value="BentaPOS">BentaPOS</option>
                   <option value="StockWisePro">StockWisePro</option>
+                  <option value="PickleBook">PickleBook</option>
                   <option value="Attendance & Payroll System">
                     Attendance & Payroll System
                   </option>
